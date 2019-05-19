@@ -111,7 +111,7 @@ void jaccard_distance(const float *prode,  const vector<vector<float>>& gallery,
     vector<vector<float>>prode_j_first = krnn(prode,gallery,original_distance,sort_original,k1,k2);
     vector<vector<vector<float>>>gallery_j;
     for(unsigned i = 0;i<gallery.size();i++){
-        gallery.push_back(krnn(gallery[i],gallery,original_distance,sort_original,k1,k2))
+        gallery_j.push_back(krnn(gallery[i],gallery,original_distance,sort_original,k1,k2))
     }
 
     //更鲁棒的k-rnn集合
