@@ -103,6 +103,7 @@ vector<vector<float>>krnn(const float *prode,  const vector<vector<float>>& gall
             final_rank.push_back(initRank[i]);
         }
     }
+    return final_rank;
 }
 
 void jaccard_distance(const float *prode,  const vector<vector<float>>& gallery, const float *original_distance,const float *sort_original
