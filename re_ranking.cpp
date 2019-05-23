@@ -19,7 +19,7 @@ void normalization(const float *tempList)
 
     for(unsigned i =0;i<tempList.size();i++)
     {
-        square += tempList[i] * tempList;
+        square += tempList[i] * tempList[i];
         sum += tempList[i];
     }
     float sqrt_square = sqrt(square);
